@@ -6,7 +6,6 @@ import './page.css'
 export default function Home() {
     const link_style = "underline hover:text-purple-600 transition"
     
-
     const colors = [
         {
             start: [255, 0, 48],
@@ -50,7 +49,7 @@ export default function Home() {
         })
         setCurrentColors(newColors)
         setColorSize(mapToLogistic(normalized_y, 40, 50))
-    }, [mousePos.y])
+    }, [mousePos.y, colors, currentColors])
 
     const mapToLogistic = (input: number, min: number, max: number) => {
         let y = 1 / (1 + Math.pow(3, -4 * input)) // [0, 1]
