@@ -6,7 +6,20 @@ import './page.css'
 export default function Home() {
     const link_style = "underline hover:text-purple-600 transition"
     
-    
+    const colors = [
+        {
+            start: [255, 0, 48],
+            end: [85, 0, 255]
+        },
+        {
+            start: [255, 166, 0],
+            end: [0, 255, 255]
+        },
+        {
+            start: [184, 0, 253],
+            end: [255, 0, 251]
+        }
+    ]
 
     const [mousePos, setMousePos] = useState({x: 0, y: 0});
     const [colorSize, setColorSize] = useState(40);
@@ -27,20 +40,6 @@ export default function Home() {
     })
 
     useEffect(() => {
-        const colors = [
-            {
-                start: [255, 0, 48],
-                end: [85, 0, 255]
-            },
-            {
-                start: [255, 166, 0],
-                end: [0, 255, 255]
-            },
-            {
-                start: [184, 0, 253],
-                end: [255, 0, 251]
-            }
-        ]
         const normalized_y: number = (2 * mousePos.y / window.innerHeight) - 1
         const newColors: number[][] = currentColors
         newColors.map((color: number[], i: number) => {
@@ -50,7 +49,7 @@ export default function Home() {
         })
         setCurrentColors(newColors)
         setColorSize(mapToLogistic(normalized_y, 40, 50))
-    }, [mousePos.y, currentColors])
+    }, [mousePos.y, colors])
 
     const mapToLogistic = (input: number, min: number, max: number) => {
         let y = 1 / (1 + Math.pow(3, -4 * input)) // [0, 1]
@@ -82,7 +81,7 @@ export default function Home() {
                         projects    
                     </p>
                     <p className={`pr-4 ${link_style}`}>
-                        <a href="BrandonKim_resume.pdf" target="_blank">resume (fall '23)</a>
+                        <a href="BrandonKim_resume.pdf" target="_blank">resume (fall &#39;23)</a>
                     </p>
                     <p className={`pr-4 ${link_style}`}>
                         <a href="https://github.com/branmkim">github</a>
