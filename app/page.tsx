@@ -75,7 +75,7 @@ export default function Home() {
                 </div>
                 <div className="flex items-center pt-1 pb-4">
                     <object data="wrench.svg" className="w-8 pr-2"></object>
-                    <p className="text-md">interested in web dev, robotics, aero</p>
+                    <p className="text-md">interested in web dev, robotics, design</p>
                 </div>
 
                 {/* links */}
