@@ -6,3 +6,7 @@
         radial-gradient(circle at 50% 130%, rgba(0, 225, 255, 0.8) 0, rgba(255, 255, 255, 0) 40%),
         radial-gradient(circle at 80% 150%, rgba(255, 0, 251, 0.8) 0, rgba(255, 255, 255, 0) 40%);
 }
+
+.body {
+    padding: min(24rem, 10%)
+}
