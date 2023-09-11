@@ -1,0 +1,7 @@
+.card-bg {
+    backdrop-filter: blur(100rem);
+    transition: background 0.5s;
+}
+.card-bg:hover {
+    background: white;
+}
