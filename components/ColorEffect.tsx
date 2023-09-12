@@ -57,9 +57,9 @@ export default function ColorEffect() {
     return (
         <div className="flex flex-col-reverse -z-10 absolute top-0 w-full h-full"
                 style={{backgroundImage: 
-                    `radial-gradient(circle at 20% 150%, rgb(${currentColors[0][0]}, ${currentColors[0][1]}, ${currentColors[0][2]}) 0, rgba(255, 255, 255, 0) ${colorSize}%), ` + 
-                    `radial-gradient(circle at 50% 120%, rgb(${currentColors[1][0]}, ${currentColors[1][1]}, ${currentColors[1][2]}) 0, rgba(255, 255, 255, 0) ${colorSize}%), ` +
-                    `radial-gradient(circle at 80% 150%, rgb(${currentColors[2][0]}, ${currentColors[2][1]}, ${currentColors[2][2]}) 0, rgba(255, 255, 255, 0) ${colorSize}%)`
+                    `radial-gradient(circle at 20% 130%, rgb(${currentColors[0][0]}, ${currentColors[0][1]}, ${currentColors[0][2]}) 0, rgba(255, 255, 255, 0) ${colorSize}%), ` + 
+                    `radial-gradient(circle at 50% 110%, rgb(${currentColors[1][0]}, ${currentColors[1][1]}, ${currentColors[1][2]}) 0, rgba(255, 255, 255, 0) ${colorSize}%), ` +
+                    `radial-gradient(circle at 80% 130%, rgb(${currentColors[2][0]}, ${currentColors[2][1]}, ${currentColors[2][2]}) 0, rgba(255, 255, 255, 0) ${colorSize}%)`
                 }}
             >
         </div>

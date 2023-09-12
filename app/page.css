@@ -7,6 +7,13 @@
         radial-gradient(circle at 80% 150%, rgba(255, 0, 251, 0.8) 0, rgba(255, 255, 255, 0) 40%);
 }
 
-.body {
-    padding: min(24rem, 10%)
+::-webkit-scrollbar {
+    height: 0.25rem;
+}
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0);
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(50, 50, 50, 0.25);
+    border-radius: 0.125rem;
 }
