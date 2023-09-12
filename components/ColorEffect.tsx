@@ -45,7 +45,7 @@ export default function ColorEffect() {
             })
         })
         setCurrentColors(newColors)
-        setColorSize(mapToLogistic(normalized_y, 40, 50))
+        setColorSize(mapToLogistic(normalized_y, 50, 60))
     }, [mousePos.y, colors])
 
     const mapToLogistic = (input: number, min: number, max: number) => {

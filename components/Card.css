@@ -1,5 +1,5 @@
 .card-bg {
-    backdrop-filter: blur(100rem);
+    backdrop-filter: blur(100rem) brightness(115%);
     transition: background 0.5s;
 }
 .card-bg:hover {
